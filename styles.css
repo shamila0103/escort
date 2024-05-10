@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(52, 36, 12);
+  color: white;
+}
+
+header {
+  top: 20px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto; /* Push logo to the left */
+}
+
+#escortLogo {
+  width: 24vh;
+  margin-top: -2vh;
+}
+
+#pUnderLogo {
+  font-family: cursive;
+  font-size: 22px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#pUnderLogo a {
+  color: rgb(208, 165, 4);
+  text-decoration: none;
+}
+
+#contact {
+  display: flex;
+  align-items: center;
+  margin-right: 20vh; /* Add left margin to the contact section */
+}
+
+/* Style the contact links container with rounded corners and border */
+#contact {
+  background-color: #333; /* Dark background color */
+  padding: 5px 10px; /* Add padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid rgb(255, 215, 0); /* Add border with gold color */
+}
+
+#contactInfo {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#contact a {
+  text-decoration: none;
+  color: rgb(255, 215, 0); /* Change to gold color */
+  margin-right: 10px;
+}
+
+/* Style links on hover */
+#contact a:hover {
+  color: #ffcc00; /* Change to slightly different gold color on hover */
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+main figure {
+  flex: 0 0 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+  border: 2px solid rgb(208, 165, 4);
+  border-radius: 10px;
+}
+
+figcaption {
+  color: white;
+  margin-top: 10px;
+  font-size: 16px;
+}
+main figure img {
+  height: 275px; /* Adjust the height as needed */
+}
+
+@media screen and (max-width: 540px) and (min-width: 0px) {
+  #number {
+    display: none;
+  }
+  #contactInfo {
+    display: none;
+  }
+  #contact {
+    margin-left: 9%;
+  }
+  #whatsapp {
+    margin-top: 10%;
+    margin-left: 9%;
+    display: flex;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  #whatsapp p {
+    font-size: 13px;
+  }
+}
